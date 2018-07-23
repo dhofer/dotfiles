@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=WhatsApp
+Type=Application
+Terminal=false
+Icon=whatsapp
+Exec=/usr/bin/google-chrome --app=https://web.whatsapp.com/
+Comment=WhatsApp WebView
+StartupWMClass=web.whatsapp.com_chrome

@@ -1,0 +1,59 @@
+[user]
+	name = Daniel Hofer
+	email = daniel@dhofer.com
+	signingkey = 264A6EF2AC78106A681E2C1A32B5EDB6F79DD996
+[color]
+	ui = true
+[alias]
+	aa = add --all :/
+	bc = !sh -c 'git branch --merged | grep -v \\* | xargs -n 1 git branch -d'
+	bl = branch -vva
+	br = branch
+	ci = commit -v
+	clobber = clean -ffdx
+	co = checkout
+	di = diff
+	dic = diff --cached
+	fe = fetch --all --prune
+	fixup = commit --amend -C HEAD
+	gn = goodness
+	lol = log --graph --decorate --oneline
+	pa = !git push && git push --tags
+	pd = !git push -n && git push -n --tags
+	pi = cherry-pick
+	pr = pull-request
+	rh = reset --hard
+	sed = !sh -c 'git ls-files -z $2 | xargs -0 sed -i -e $1' -
+	st = status -sb
+	use-ssh = config url."git@github.com:".pushinsteadof https://github.com/
+	wd = diff --word-diff
+	wip = commit -amWIP --no-gpg-sign
+[core]
+	whitespace = trailing-space,space-before-tab
+	autocrlf = input
+[commit]
+	gpgsign = true
+[log]
+	decorate = true
+[push]
+	default = simple
+[pull]
+	rebase = true
+[merge]
+	tool = vimdiff
+[rebase]
+	autosquash = true
+[rerere]
+	enabled = true
+[diff]
+	renames = copies
+	algorithm = patience
+	compactionHeuristic = true
+[diff "gem"]
+	textconv = gem spec
+[credential]
+	helper = cache --timeout=3600
+[include]
+	path = .gitconfig.local
+
+# vim: set ts=4 sw=4 noet:

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Slack
+Type=Application
+Terminal=false
+Icon=slack
+Exec=/usr/bin/google-chrome --app=https://kubernetes.slack.com
+Comment=Slack WebView
+StartupWMClass=kubernetes.slack.com_chrome

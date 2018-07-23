@@ -1,0 +1,21 @@
+# vim: ft=sh
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias t='tree'
+alias ta='tree -a'
+
+alias s=ssh
+alias yolossh='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+
+alias tf=terraform
+alias hd='hexdump -C'
+
+alias ubuntu='docker run -it --rm -v $(PWD):/data -w /data ubuntu:18.04 /bin/bash'
+alias debian='docker run -it --rm -v $(PWD):/data -w /data debian:stretch /bin/bash'
+alias centos='docker run -it --rm -v $(PWD):/data -w /data centos:7 /bin/bash'
+alias alpine='docker run -it --rm -v $(PWD):/data -w /data alpine /bin/sh'
+
+:
